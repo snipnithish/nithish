@@ -1,0 +1,25 @@
+.student{
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #111212;
+    border-radius: 8px;
+    background-color: rgb(246, 241, 242);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.grid-view{
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+    gap: 20px;
+}
+@media (max-width: 900px) {
+    .grid-view {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .grid-view {
+        grid-template-columns: 1fr;
+    }
+}
